@@ -38,8 +38,6 @@ class Rectangle:
         return self.__height * self.__width
     """ Mokhtar """
     def perimeter(self):
-        if self.__height * self.__width is 0:
-            return 0
         return (self.__height + self.__width) * 2
     """ Str """
     def __str__(self):
