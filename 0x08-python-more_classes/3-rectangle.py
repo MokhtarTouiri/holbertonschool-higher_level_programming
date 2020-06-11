@@ -49,3 +49,6 @@ class Rectangle:
             a += '#' * self.__width + '\n'
         a += '#' * self.__width
         return a
+    """ Mokhtar """
+    def __repr__(self):
+        return "Rectangle({}, {})".format(self.__height, self.__width)
