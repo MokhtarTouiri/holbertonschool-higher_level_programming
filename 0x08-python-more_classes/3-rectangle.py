@@ -10,7 +10,7 @@ class Rectangle:
     """ Mokhtar """
     @property
     def width(self):
-        return self. __width
+        return self.__width
     """ Mokhtar """
     @width.setter
     def width(self, value):
@@ -42,10 +42,11 @@ class Rectangle:
     """ Str """
     def __str__(self):
         """ Mokhtar """
-        a = ""
         if self.__height is 0:
-            return a
+            return ""
+	a = ""
         for i in range(self.__height - 1):
-            a = a + '#' * self.__width + '\n'
-        a = a + '#' * self.__width
+            a += '#' * self.__width
+            a += '\n'
+        a += '#' * self.__width
         return a
