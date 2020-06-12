@@ -42,11 +42,10 @@ class Rectangle:
     """ Str """
     def __str__(self):
         """ Mokhtar """
+        a = ""
         if self.__height is 0:
-            return ""
-	a = ""
+            return a
         for i in range(self.__height - 1):
-            a += '#' * self.__width
-            a += '\n'
+            a += '#' * self.__width + '\n'
         a += '#' * self.__width
         return a
