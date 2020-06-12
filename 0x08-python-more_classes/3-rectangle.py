@@ -43,7 +43,7 @@ class Rectangle:
     def __str__(self):
         """ Mokhtar """
         a = ""
-        if self.__height is 0 or self.__widht is 0:
+        if self.__height is 0 or self.__width is 0:
             return a
         for i in range(self.__height - 1):
             a += '#' * self.__width + '\n'
