@@ -13,16 +13,6 @@
     	 >>> my_list.print_sorted()
     	 [1, 2, 3, 4, 5]
 
-	 >>> my_list = MyList()
-	 >>> my_list.append(115)
-	 >>> my_list.append(1)
-	 >>> my_list.append(69)
-	 >>> my_list.append(228)
-	 >>> my_list.append(5)
-	 >>> my_list.print_sorted()
-	 [228, 115, 69, 5, 1]
-	 
-	 
 	 >>> my_list = MyList([])
 	 >>> my_list.print_sorted()
 	 []
