@@ -1,2 +1,2 @@
-# List ALLL Database
+-- List ALLL Database
 SHOW DATABASES;
