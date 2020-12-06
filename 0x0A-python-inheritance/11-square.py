@@ -10,7 +10,10 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         Rectangle.__init__(self, size, size)
         self.__size = size
-    """ def str """    
+    """ def string """    
     def __str__(self):
-        """ return str """
-        def __str__(self):
+        """function 2"""
+        string = "[Square] " + str(self.__size) + '/'
+        string += str(self.__size)
+        return string
+
