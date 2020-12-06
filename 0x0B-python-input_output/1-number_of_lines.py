@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+""" Module """
+
+
+def number_of_lines(filename=""):
+    """ Filename """
+    with open(filename, "r", encoding="UTF-8") as file:
+        """ return """
+        return len(file.readlines())
