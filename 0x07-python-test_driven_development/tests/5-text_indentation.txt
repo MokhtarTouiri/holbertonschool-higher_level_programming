@@ -1,0 +1,26 @@
+""" FILE.TEST """
+
+Import module:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+arg:
+	>>> text_indentation(2)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+arg:
+	>>> text_indentation(Nan)
+	Traceback (most recent call last):
+	...
+	TypeError: string with blank line
+
+str:
+>>> text_indentation("Good Night")
+good night
+
+str:
+>>> text_indentation("good night")
+good night
+
+
