@@ -1,0 +1,50 @@
+""" FILE TEST """
+
+import function
+>>> print_square = __import__('4-print_square').print_square
+
+correct input:
+	>>> print_square(3)
+	###
+	###
+	###
+
+correrct input:
+        >>> print_square(4)
+        ####
+        ####
+        ####
+        ####
+
+argument:
+	>>> print_square()
+	Traceback (most recent call last):
+	...
+	TypeError: print_square() missing 1 required positional argument: 'size'
+
+correct input:
+        >>> print_square(10)
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+
+argument:
+>>> print_square(0)
+
+
+argument:
+>>> print_square(1)
+#
+
+print str:
+>>> print_square("bon")
+Traceback (most recent call last):
+TypeError: size must be an integer
+
