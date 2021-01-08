@@ -1,4 +1,3 @@
 #!/bin/bash
 # cURL body size
-curl -so "1$" -w '%{size_download}'
-
+curl --compressed -so /dev/null "1$" -w '%{size_download}'
