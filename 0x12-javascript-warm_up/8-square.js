@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const size = parseInt(process.argv[2]);
 for (let y = 0; y < size; y++) {
-  for (let z = 0; z < size; z++) {
-    let i = 0;
+for (let z = 0; z < size; z++) {
+    let i = '';
     i += 'X';
   }
   console.log(i);
