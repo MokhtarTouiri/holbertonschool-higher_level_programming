@@ -1,6 +1,5 @@
 #!/usr/bin/node
-let i = 0;
 const myVar = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-for (let i = 0; i < myVar.length; i++) {
+for (let i = 0; i < 3; i++) {
   console.log(myVar[i]);
 }
