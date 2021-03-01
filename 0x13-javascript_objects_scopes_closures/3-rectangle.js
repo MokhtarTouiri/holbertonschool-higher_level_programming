@@ -11,9 +11,9 @@ class Rectangle {
     for (let i = 0; i < this.height; i++) {
       let r = '';
       for (let i = 0; i < this.width; i++) {
-        process.stdout.write('X');
+        r += 'X';
       }
-      console.log();
+      console.log(r);
     }
   }
 }
