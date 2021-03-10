@@ -1,18 +1,17 @@
 #!/usr/bin/node
-const request = require('request');
 const process = require('process');
+const request = require('request');
 
-request(process.argv[2], function (error, response, body) {
-    let x = 0;
-    if (error) {
-      console.log(error);
+request(process.argv[2], function (err, res, body) {
+  if (err) 
+  const json = JSON.parse(body);
+  let i = 0;
+  for (let a = 0; json.res[a]; a++) {
+    for (let b = 0; json.res[b].characters[b]; b++) {
+      if (json.res[a].characters[b].includes('/api/people/18/')) {
+           i++; 
+        }
     }
-    const jsn = JSON.parse(body);
-    for (let i = 0; jsn.results[i] !== undefined; i++) {
-      if (jsn.results[i].characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
-        x++;
-      }
-    }
-    console.log(c);
-  });
-  
+  }
+  console.log(i);
+});
