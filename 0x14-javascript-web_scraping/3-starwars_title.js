@@ -2,7 +2,10 @@
 const request = require('request');
 const process = require('process');
 request('https://swapi-api.hbtn.io/api/films/' + process.argv[2], function (error, response, body) {
-  if (error) 
-  const jsn = JSON.parse(body);
-  console.log(jsn.title);
+  if (err) {
+    console.log(err);
+  }
+  const json = JSON.parse(body);
+  console.log(json.title);
 });
+
