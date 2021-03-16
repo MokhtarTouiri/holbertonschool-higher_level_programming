@@ -2,7 +2,7 @@
 const process = require('process');
 
 request(process.argv[2], function (error, response, body) {
-    let X = 0;
+    let x = 0;
     if (error) {
       console.log(error);
     }
