@@ -1,14 +1,14 @@
 #!/usr/bin/node
 const process = require('process');
 const request = require('request');
-request(process.argv[2], function (err, res, body) {
-  if (err) { throw err; }
-  const js = JSON.parse(body);
-  let i = 0;
-  for (let a = 0; js.results[a]; a++) {
-    for (let b = 0; js.results[a].characters[b]; b++) {
-      if (js.results[i].characters[b].includes('/api/people/18/')) { i++; }
+request(process.argv[2], function (error, response, body) {
+  if (error) { throw error; }
+  const jsn = JSON.parse(body);
+  let z = 0;
+  for (let i = 0; jsn.results[i]; i++) {
+    for (let y = 0; jsn.results[i].characters[y]; y++) {
+      if (jsn.results[i].characters[y].includes('/api/people/18/')) { z++; }
     }
   }
-  console.log(i);
+  console.log(z);
 });
