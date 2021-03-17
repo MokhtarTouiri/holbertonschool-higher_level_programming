@@ -8,9 +8,9 @@ request(url, function (err, res, body) {
   for (const ex of json) {
     if (ex.completed === true) {
       if (Any[ex.userId]) {
-    Any[ex.userId] += 1;
-    } else {
-    Any[ex.userId] = 1;
+        Any[ex.userId] += 1;
+      } else {
+        Any[ex.userId] = 1;
       }
     }
   }
