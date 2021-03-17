@@ -2,7 +2,7 @@
 const request = require('request');
 const url = process.argv[2];
 
-request(url, function (err, res, body) {
+request(url, (err, res, body) {
   const Any = {};
   const json = JSON.parse(body);
   for (const ex of json) {
