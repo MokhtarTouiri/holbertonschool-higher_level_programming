@@ -3,9 +3,9 @@
 
 
 if __name__ == "__main__":
-    from ullib import request
+    import request.urllib
 
-    with request.urlopen('https://intranet.hbtn.io/status') as response:
+    with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
         read = response.read()
         print('Body response:')
         print('\t- content: {}'.format(read))
