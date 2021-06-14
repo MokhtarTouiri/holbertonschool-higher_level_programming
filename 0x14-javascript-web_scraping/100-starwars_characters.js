@@ -2,8 +2,8 @@
 """ Who was playing in this movie """
 
 const request = require('request');
-const movie = process.argv[2];
-const url = 'https://swapi.co/api/films/' + movie;
+const film = process.argv[2];
+const url = 'https://swapi.co/api/films/' + film;
 
 request(url, function (error, response, body) {
   if (error) {
